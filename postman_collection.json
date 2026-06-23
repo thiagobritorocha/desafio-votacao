@@ -1,0 +1,190 @@
+{
+  "info": {
+    "_postman_id": "b3d8ffe2-aa92-4aa0-a5e6-6677a688fd1f",
+    "name": "Desafio Votação",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "2063291"
+  },
+  "item": [
+    {
+      "name": "/api/v1/topics",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"teste\",\r\n  \"description\": \"teste\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/topics",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "topics"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/api/v1/voting-sessions",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"topicId\": \"252a182f-5a64-42cb-8fa2-116a7bab366b\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/voting-sessions",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "voting-sessions"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/api/v1/votes",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"cpf\": \"989443542-25\",\r\n  \"vote\": \"YES\",\r\n  \"votingSessionId\": \"8adca857-0fa2-4649-838d-737a2cebdebc\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/votes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "votes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/api/v1/topics",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/topics",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "topics"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/api/v1/voting-sessions/report",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/voting-sessions/{session}/report",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "voting-sessions",
+            "{session}",
+            "report"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,3 +1,22 @@
+### Running the application
+./gradlew clean build
+java -jar .\build\libs\desafiovotacao-1.0.0.jar
+
+## Swagger documentation
+This API is build with Swagger documentation generator. The complete API documentation can be retrieved in:
+```http request
+http://localhost:8080/swagger-ui.html
+``` 
+
+## Examples
+A Postman exported Collection with some examples of API call is available on the project source tree.
+
+- [postman_collection.json](postman/CooperativeAssembly.postman_collection.json)
+
+## Delete all data
+window -> cmd 
+del desafio-votacao-db.mv.db
+
 # Votação
 
 ## Objetivo
