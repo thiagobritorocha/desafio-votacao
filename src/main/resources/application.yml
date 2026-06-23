@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: cooperativeassembly
+  datasource:
+    username: sa
+    url: jdbc:h2:file:~/desafio-votacao-db;CASE_INSENSITIVE_IDENTIFIERS=TRUE;
+    driverClassName: org.h2.Driver
+    password: '123'
+  h2:
+    console:
+      enabled: 'true'
+      settings.web-allow-others: 'true'
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+    enabled: true
+
+
