@@ -89,7 +89,7 @@ public class VotingSessionService {
     VotingSession session;
     try {
       session = repository.saveAndFlush(sessionConverter.toModel(request));
-    } catch (DataIntegrityViolationException ex) {
+    } catch (Exception ex) {
       throw new VotingSessionNotValidException(request.getTopicId().toString());
     }
     return sessionConverter.toResponseDTOv1(session);

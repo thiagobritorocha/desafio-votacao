@@ -18,7 +18,7 @@ public class VotingSession {
 
   @NotNull
   @OneToOne
-  @JoinColumn(name = "topic_id", unique = true)
+  @JoinColumn(name = "topic_id")
   private Topic topic;
 
   @NotNull private LocalDateTime expires;
