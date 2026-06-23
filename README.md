@@ -1,4 +1,5 @@
 ### Running the application
+Install java 25
 ./gradlew clean build
 java -jar .\build\libs\desafiovotacao-1.0.0.jar
 
