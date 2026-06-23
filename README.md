@@ -17,7 +17,7 @@ A Postman exported Collection with some examples of API call is available on the
 - [postman_collection.json](postman/CooperativeAssembly.postman_collection.json)
 
 ## Delete all data
-window -> cmd 
+windows -> cmd 
 del desafio-votacao-db.mv.db
 
 # Votação
